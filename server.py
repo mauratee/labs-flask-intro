@@ -18,7 +18,7 @@ AWESOMENESS = [
 def start_here():
     """Home page."""
 
-    return "<!doctype html><html>Hi! This is the home page.</html>"
+    return "<!doctype html><html>Hi! This is the home page. <a href='http://127.0.0.1:62659/hello'>Hello!</a></html>"
 
 
 @app.route('/hello')
@@ -35,6 +35,7 @@ def say_hello():
         <h1>Hi There!</h1>
         <form action="/greet">
           What's your name? <input type="text" name="person">
+          What's your favorite compliment? <input type="radio" name="compliment" value="awesome"> <label>Awesome</label>
           <input type="submit" value="Submit">
         </form>
       </body>
